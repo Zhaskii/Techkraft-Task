@@ -11,7 +11,7 @@ A full-stack property listing and favourites management system built using the M
 - ⭐ Add properties to favourites
 - ❌ Remove properties from favourites
 - 📦 Backend-controlled property creation (no UI for adding properties)
-- ⚡ Real-time UI updates for favourites
+- ⚡ UI updates for favourites
 
 ---
 
@@ -101,7 +101,7 @@ npm install
 
 ### 3. Environment Variables
 
-Create .env in backend folder (take .env.example for reference)
+Create .env in server folder (take .env.example for reference)
 
 ---
 
@@ -171,7 +171,7 @@ POST /property/add
    - Sends `propertyId` to backend
    - Stored with `userId`
 4. When user removes:
-   - Deletes using `userId + propertyId`
+   - Deletes using `favId`
 5. UI updates instantly (no reload needed)
 
 ---
