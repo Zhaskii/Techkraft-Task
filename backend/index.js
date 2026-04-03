@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [process.env.FRONTEND_ORIGIN],
   }),
 );
 
@@ -24,7 +24,7 @@ app.use("/user", userRoute);
 app.use("/favourite", favouriteRoute);
 app.use("/property", propertyRoute);
 
-const PORT = 8080;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

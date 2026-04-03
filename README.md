@@ -12,7 +12,6 @@ A full-stack property listing and favourites management system built using the M
 - ❌ Remove properties from favourites
 - 📦 Backend-controlled property creation (no UI for adding properties)
 - ⚡ Real-time UI updates for favourites
-- 📱 Responsive dashboard UI
 
 ---
 
