@@ -20,6 +20,18 @@ A full-stack property listing and favourites management system built using the M
 Properties are **NOT created from the frontend UI**.
 
 - Properties are added manually through backend (API/Postman)
+- You can, for now, use terminal to add properties for testing(server should be running)
+
+```
+curl -X POST http://localhost:8080/property/add \
+  -H "Content-Type: application/json" \
+  -d '{
+    "propertyName": "Sunset Villa",
+    "propertyLocation": "Kathmandu",
+    "propertyPrice": 250000
+  }'
+```
+
 - Frontend is **read-only for properties**
 - Users (buyers) can:
   - View properties
@@ -57,18 +69,20 @@ This keeps:
 ## 📁 Folder Structure
 
 ```
+
 client/
-  ├── components/
-  ├── pages/
-  ├── lib/
-  └── ...
+├── components/
+├── pages/
+├── lib/
+└── ...
 
 server/
-  ├── controller/
-  ├── model/
-  ├── middleware/
-  ├── routes/
-  └── ...
+├── controller/
+├── model/
+├── middleware/
+├── routes/
+└── ...
+
 ```
 
 ---
